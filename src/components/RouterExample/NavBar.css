@@ -1,0 +1,31 @@
+.header {
+  height: 5rem;
+  background-color: #044599;
+
+}
+
+.header nav {
+  height: 100%;
+}
+
+.header ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  align-items: center;
+}
+
+.header li {
+  margin: 0 1rem;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+}
+
+.header a:hover
+{
+  color: #95bcf0;
+}
