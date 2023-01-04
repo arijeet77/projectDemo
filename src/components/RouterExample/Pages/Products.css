@@ -1,0 +1,22 @@
+.topBar {
+  height: 3rem;
+  background-color: aliceblue;
+
+}
+
+.topBar ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+
+.topBar li {
+  margin: 0 1rem;
+}
+
+.topBar a {
+  text-decoration: none;
+}

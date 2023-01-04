@@ -1,0 +1,21 @@
+.formDetails {
+    padding: 10px;
+    margin: auto;
+    width: max-content;
+}
+
+.htag {
+    text-align: center;
+}
+
+.dtag{
+    padding: 1px;
+    margin: auto;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.bg {
+    background-color: aliceblue;
+}
+
