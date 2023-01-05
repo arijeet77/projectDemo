@@ -21,7 +21,6 @@ import StudentRegistration from "./components/FormikExample/StudentRegistration"
 import StudentDetails from "./components/FormikExample/StudentDetails";
 import Navigation from "./components/FormikExample/Navigation";
 import APIDemo from "./components/API/APIDemo";
-import ReduxSagaDemo from "./components/Redux Saga Demo/ReduxSagaDemo";
 import './App.css'
 
 function App() {
@@ -60,16 +59,15 @@ function App() {
           </Route>
         </Routes>
       </div> */}
-      {/* <Navigation />
+      <Navigation />
       <div>
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/registration" element={<StudentRegistration onAdding={addDetailsHandler} />}/>
           <Route path="/details" element={<StudentDetails showData={newData} />}/>
         </Routes>
-      </div> */}
-      <APIDemo />
-      {/* <ReduxSagaDemo/> */}
+      </div>
+      {/* <APIDemo /> */}
 
     </div>
   );
