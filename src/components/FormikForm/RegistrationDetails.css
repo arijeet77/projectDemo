@@ -1,0 +1,16 @@
+.details {
+    background-color: aliceblue;
+    margin: 2rem auto;
+    width:52rem;
+    border-radius: 12px;
+    text-align: center;
+}
+
+table {
+    text-align: left;
+}
+
+.tableClass {
+    display: flex;
+    
+}
