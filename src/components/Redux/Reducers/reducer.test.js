@@ -79,10 +79,22 @@ describe("Test Reducer", () => {
           count: 0,
           auth: false,
         };
-        expect(reducer(undefined, { type: "LOGIN", payload: false })).toEqual(
+        expect(reducer(undefined, { type: "LOGOUT", payload: false })).toEqual(
           expectedState
         );
       });
     });
+  
+  describe("Default switch case", () => {
+    test("checks default switch case", () => {
+      const expectedState = {
+        count: 0,
+        auth: false,
+      };
+      expect(reducer(undefined, { type: "LOG", payload: false })).toEqual(
+        expectedState
+      );
+    });
+  });
 
 })

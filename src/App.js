@@ -7,8 +7,8 @@ import ArrayMethods from "./components/JavaScriptExamples/ArrayMethods";
 import ReduxDemo from "./components/Redux/ReduxDemo";
 import Greeting from "./components/Testing/Jest/Greeting";
 import Async from "./components/Testing/Jest/Async";
-import FormatDate from "./components/TypescriptExamples/FormatDate"
-import MessageProps from "./components/TypescriptExamples/MessageProps";
+// import FormatDate from "./components/TypescriptExamples/FormatDate"
+// import MessageProps from "./components/TypescriptExamples/MessageProps";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "./components/RouterExample/Pages/HomePage";
 import Products from "./components/RouterExample/Pages/Products";
@@ -22,6 +22,10 @@ import StudentDetails from "./components/FormikExample/StudentDetails";
 import Navigation from "./components/FormikExample/Navigation";
 import APIDemo from "./components/API/APIDemo";
 import './App.css'
+import Registration from "./components/FormikForm/Registration";
+import NavigationBar from "./components/FormikForm/NavigationBar";
+import RegistrationForm from "./components/FormikForm/RegistrationForm";
+import RegistrationDetails from "./components/FormikForm/RegistrationDetails";
 
 function App() {
   
@@ -59,16 +63,36 @@ function App() {
           </Route>
         </Routes>
       </div> */}
-      <Navigation />
+      {/* <Navigation /> */}
+      {/* <div>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route
+            path="/registration"
+            element={<StudentRegistration onAdding={addDetailsHandler} />}
+          />
+          <Route
+            path="/details"
+            element={<StudentDetails showData={newData} />}
+          />
+        </Routes>
+      </div> */}
+      {/* <APIDemo /> */}
+      {/* <Registration/> */}
+      <NavigationBar />
       <div>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/registration" element={<StudentRegistration onAdding={addDetailsHandler} />}/>
-          <Route path="/details" element={<StudentDetails showData={newData} />}/>
+          <Route
+            path="/registration"
+            element={<RegistrationForm onAdding={addDetailsHandler} />}
+          />
+          <Route
+            path="/details"
+            element={<RegistrationDetails displayData={newData} />}
+          />
         </Routes>
       </div>
-      {/* <APIDemo /> */}
-
     </div>
   );
 }
